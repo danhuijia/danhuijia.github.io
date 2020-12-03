@@ -5,13 +5,7 @@ main {
 .inner{
     margin-top: 100px;}
 
-.topbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 
 .topbar a {
@@ -35,21 +29,126 @@ main {
 
 .gif-image{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float: inside;
     height: 200px;
     width: 400px;
+    margin-right: auto;
+    margin-left: auto;
 
 
 }
 
 
 .gif-image:hover{
-    -webkit-transform:scale(1.5); /* or some other value */
-    transform:scale(1.5);
+    -webkit-transform:scale(2);
+    transform:scale(2);
 }
 
 .project-summary{
     top: 180px;
 }
+
+.row::after{
+    content:"";
+    clear:both;
+    display: table;
+
+}
+
+.profile-trim {
+    float:left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left:4%;
+
+}
+
+
+.profile {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -8%;
+    height: 100%;
+    width: auto;
+}
+
+.profile-lili {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -2%;
+    height: 100%;
+    width: auto;
+}
+
+.profile-coco {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -5%;
+    height: 100%;
+    width: auto;
+}
+
+
+.inner-dataVis{
+    background: #f2f2f2;
+}
+
+
+
+.inner-project-summary{
+    background: cornsilk;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+.topbar {
+    overflow: hidden;
+
+    position: fixed;
+    margin-left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: #333333;
+    outline: #333333;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 75px;
+
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    /*color: white;*/
+    display: none;
+    padding: 80px 20px;
+    height: 100%;
+}
+
+#project {background-color: lavender;}
+#dataVis {background-color: lightcyan;}
+#rldata {background-color: lightblue;}
+#soft-dev {background-color: cornsilk;}
+#pro-lan {background-color: lightpink;}
+
 
