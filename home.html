@@ -8,20 +8,12 @@
 </head>
 <body>
 
-<!--        <div class = topbar>-->
-
-<!--                <a class = active href="#project">Project</a>-->
-<!--                <a href="#dataVis">Data Visualization</a>-->
-<!--                <a href="#software-dev">Software Development</a>-->
-<!--                <a href ="#redatabase"> Relational Database</a>-->
-<!--                <a href="#program-lan">Programming Language</a>-->
-<!--        </div>-->
             <div class = "topbar">
                     <button class="tablink" onclick="openPage('project', this, 'mediumslateblue')" id="defaultOpen" >About Me</button>
                     <button class="tablink" onclick="openPage('dataVis', this, 'green')" >Data Visualization</button>
                     <button class="tablink" onclick="openPage('soft-dev', this, 'orange')">Software Development</button>
-                    <button class="tablink" onclick="openPage('rldata', this, 'blue')">Relational Database</button>
-                    <button class="tablink" onclick="openPage('pro-lan', this, 'hotpink')">Programming Language</button>
+                    <button class="tablink" onclick="openPage('rldata', this, '#00ace6')">Relational Database</button>
+                    <button class="tablink" onclick="openPage('pro-lan', this, '#e60073')">Programming Language</button>
             </div>
 
 
@@ -30,7 +22,7 @@
 
 <main>
 
-    <div id = "project" class = "tabcontent">
+    <div id = "project" class = "tabcontent" >
         <section id = projects>
             <div class = row>
              <div class = "profile-trim">
@@ -52,17 +44,19 @@
 
             </div>
 
-            <h1> Hello! This is Danhui Jia </h1>
-            <h2> Welcome to my project summary website!  </h2><br>
-            <h4><i class="glyphicon glyphicon-envelope" style="font-size:20px; color:mediumslateblue;"></i><a href="mailto:danhuijia@gmail.com">&nbsp; Send me an e-mail!</a></h4>
-            <h4><i class="glyphicon glyphicon-user" style="font-size:20px; color:mediumslateblue;" ></i><a href= "https://github.com/danhuijia">&nbsp; Check me out on github</a></h4>
+            <div class = project-content style="font-size:19px;margin-top:5%;font-family: 'Comic Sans MS'">
+                <h1> Hello! This is <b>Danhui Jia</b> :3</h1>
+            <h1> Welcome to my project summary site!  </h1><br>
+            <h4><i class="glyphicon glyphicon-envelope" style="font-size:20px; color:mediumslateblue;"></i><a href="mailto:danhuijia@gmail.com">&nbsp; Send Me E-mail</a></h4>
+            <h4><i class="glyphicon glyphicon-user" style="font-size:20px; color:mediumslateblue;" ></i><a href= "https://github.com/danhuijia">&nbsp; Check My Github</a></h4>
 
-            <div class = project-content style="font-size:15px;">
-            <p> This website contains more details about my projects.
-                <br>Many of them are school projects, hence we only have limited
-            access and we are not allowed to make some codes public. <br>
-                My apologies.<br>
-            I will keep updating as more personal projects come :> </p>
+
+                <br>
+                <li> This website contains more details about my projects.</li>
+                <li> Some of the codes are restricted to private only. </li>
+                <li> My apologies.</li>
+                <li> I will keep updating as more personal projects come.
+                <i class="glyphicon glyphicon-heart" style="font-size:20px; color:hotpink;"></i></li>
             </div>
         </section>
     </div>
@@ -71,62 +65,77 @@
 
 
 
-    <div id = "dataVis" class = "tabcontent">
-        <section id = "dataViss">
-        <h2> Field: Data Visualization </h2>
+    <div id = "dataVis" class = "tabcontent" >
+        <div class="field-title">
+            <h2> Field: Data Visualization </h2></div>
 
+            <div class="panel-wrap" >
             <h3> <span class="label label-success">Team Project </span>  </h3>
             <div class = "panel panel-success">
-                <div class = "panel-heading" style="font-size:20px;"> <strong>COVID-19’s Ongoing Spread in South Korea</strong></div>
-                <div class = "panel-body" style="font-size:15px;">
+                <div class = "panel-heading" style="font-size:22px;"> <strong>COVID-19’s Ongoing Spread in South Korea</strong></div>
+                <div class = "panel-body" style="font-size:17px;">
                 <li><strong>Team Members: </strong> Rebecca Chen, Ben Hwang</li><br>
                     <li> <strong>Scripts and Files: </strong> Html, JavaScript (D3), CSS, CSV, SVG</li>
                     <br><li> <strong>Main Tasks: </strong> Data processing, View rendering, User interaction,
-                    Selection, Bidirectional linked views</li></br>
-                <li><strong> Project Description: </strong> TODO: add desciption here </li>
+                    Selection, Bidirectional linked views</li>
+                <br><li><strong> Project Description: </strong> This visualization allows users to explore the breakdown of
+                 infected patients by locations, age groups, dates, and patient status. It also aims to capture the
+                    linkage between cities that the patients might have travelled through, to provide another perspective
+                on how the virus had spread across.</li>
                 <br>
                 <br>
                 <img src="gif/InfoVisFinal.gif" class = "gif-image"/>
-            </div>
-            </div>
-
-
-            <h3> <span class="label label-success">Personal Project </span> </h3>
-            <div class = "panel panel-success">
-                <div class = "panel-heading" style="font-size:20px;">
-                    <strong>place holder for hearder </strong></div>
-                <div  class = "panel-body" style="font-size:15px;">
-                    <li>decription goes here</li>
-            <img src="gif/InfoVisP2.gif" class = "gif-image"/>
                 </div>
             </div>
+            </div>
 
-            <h3> <span class="label label-success">Personal Project </span> </h3>
-            <div class = "panel panel-success">
-                <div class = "panel-heading" style="font-size:20px;">
-                    <strong>place holder for hearder </strong></div>
-                <div  class = "panel-body" style="font-size:15px;">
-                    <li>decription goes here</li>
-                    <img src="gif/InfoVisP3.gif" class = "gif-image"/>
+            <div class="panel-wrap">
+            <h3> <span class="label label-success" >Personal Project </span> </h3>
+            <div class = "panel panel-success" >
+                <div class = "panel-heading" style="font-size:22px;">
+                    <strong>Twisting the Data Chart </strong></div>
+                <div  class = "panel-body" style="font-size:17px;">
+                    <li><b>Linked Views:</b> Bidirectional linked views demonstrate the association between
+                    different perspectives of the data.</li>
+                    <br><li><b>Bar Chart: </b>Transiting a simple bar chart into different type of charts helps
+                     analysis from multiple viewpoints.</li>
+            <br><br><img src="gif/InfoVisP2.gif" class = "gif-image"/>
+                </div>
                 </div>
             </div>
 
 
-        </section>
+            <div class="panel-wrap">
+            <h3> <span class="label label-success" >Personal Project </span> </h3>
+            <div class = "panel panel-success">
+                <div class = "panel-heading" style="font-size:22px;">
+                    <strong>Animated Map and Creative View </strong></div>
+                <div  class = "panel-body" style="font-size:17px;">
+                    <li><strong>Map:</strong>
+                    Animated map shows how the trend progresses from time to time.<br></li>
+                   <br> <li><strong>Timeline:</strong>
+                        The timeline overview represents the dogs' status for one specific mission at a specific time.<br></li>
+                    <br><br><img src="gif/InfoVisP3.gif" class = "gif-image"/><br><br>
+                </div>
+            </div>
+            </div>
+
+
     </div>
 
 
     <div id="rldata" class ="tabcontent">
-    <section id = "redatabase">
-        <h2> Field: Relational Database </h2>
+        <div class="field-title">
+            <h2> Field: Relational Database </h2></div>
+
+        <div class="panel-wrap" >
         <h3> <span class="label label-primary">Team Project </span> </h3>
-
         <div class = "panel panel-info">
-            <div class = "panel-heading" style="font-size:20px;">
+            <div class = "panel-heading" style="font-size:22px;">
                 <strong>Rent Car </strong>
-                <small>A simple transaction for clients and clerks: SQL within User Interface </small></div>
+                <small>A simple transaction for clients and clerks </small></div>
 
-                <div  class = "panel-body" style="font-size:15px;">
+                <div  class = "panel-body" style="font-size:17px;">
                     <li> <strong>Team Members: </strong> Joy Xiao, Alice Zhou</li><br>
                     <li> <strong>Scripts and Files: </strong> Java, SQL</li>
                     <br>
@@ -134,84 +143,93 @@
                     <br>
                     <li><strong> Description:</strong> A simple stimulation of transactions that are performed within a car rental
                         company by both clients and clerks. It consists of a small data set in table format that
-                        requires use of SQL to process any data modification and selection. User friendly interface allows
+                        requires the use of SQL to process any data modification and selection. User friendly interface allows
                         for easy editing and generating information by pressing bottoms and typing in text messages.</li>
                     <br>
+                </div>
             </div>
         </div>
 
-    </section>
     </div>
 
 
     <div id="soft-dev" class ="tabcontent">
-    <section id = "software-dev" >
-        <h2> Field: Software Development </h2>
+        <div class="field-title">
+            <h2> Field: Software Development </h2></div>
 
+
+        <div class="panel-wrap" >
         <h3> <span class="label label-warning">Team Project </span> </h3>
 
         <div class = "panel panel-warning">
-            <div class = "panel-heading" style="font-size:20px;">
-                <strong>Query Engine for UBC courses and rooms </strong></div>
+            <div class = "panel-heading" style="background-color: #fff7e6">
+                <strong>Query Engine for UBC Courses and Rooms </strong></div>
 
-            <div  class = "panel-body" style="font-size:15px;">
+            <div  class = "panel-body" >
                 <li> <strong>Team Member: </strong>Kohl Peterson </li><br>
         <li> <strong>Scripts and Files: </strong> Html, JSON, TypeScript</li>
         <br>
         <li> <strong>Main Tasks: </strong> Query validation, Test construction,
-            Query optimization (count, min, max,filter by functions etc), Data filtration, Data processing,
-            Sending and receiving requests from remote server</li></br>
+            Query optimization (count, min, max, filter etc), Data filtration, Data parsing,
+            Sending and receiving requests</li>
 
-        <li><strong>Description:</strong> Upon receiving user input, the query engine is able to validate
+        <br><li><strong>Description:</strong> Upon receiving user input from the web server, the query engine is able to validate
             the query against the given <em>EBNF</em> specification, and produce a list of courses or rooms that
-        satisfy the filtering request. Before generating result the query engine will todo HERE </li>
+        satisfy the filtering condition. The schedule function within the query engine aims to produce a optimized
+                pairing for course section, room and timeslot, while meeting additional constraints.
+                The dataset for rooms are generated and parsed directly from the UBC website. </li>
         <br> <br>
             </div>
         </div>
+        </div>
 
 
+
+
+        <div class="panel-wrap" >
         <h3> <span class="label label-warning">Personal Project </span> </h3>
         <div class = "panel panel-warning">
-            <div class = "panel-heading" style="font-size:20px;">
+            <div class = "panel-heading" style="background-color: #fff7e6">
                 <strong>Task Tracker</strong></div>
 
-            <div  class = "panel-body" style="font-size:15px;">
+            <div  class = "panel-body" style="font-size:17px;">
 
         <li> <strong>Scripts and Files: </strong> Java, JSON </li>
         <br><li> <strong>Main Tasks: </strong> Read and save JSON file, Test construction, Logical problem solving, Linking GUI</li>
                 <br><li><strong> Description:</strong> A simple task tacker that allows users to organize their todos.
-                <br>A user can set multiple tags for a task, as well as setting time, date, priority and description.</li>
+                <br>A user can set multiple tags for a task, as well as time, date, priority, task status and description.</li>
         <br><br>
                 <div class="pos">
                     <img src="gif/TaskTrackerGif.gif" class = "gif-image"/></div>
                 <br>
             </div>
         </div>
+        </div>
 
 
-    </section>
     </div>
 
 
     <div id = "pro-lan" class = "tabcontent">
-    <section id = "program-lan">
-        <h2> Field: Programing Language </h2>
+        <div class="field-title">
+            <h2> Field: Programing Language </h2></div>
 
-
+        <div class="panel-wrap" >
         <h3> <span class="label label-danger">Team Project </span> </h3>
         <div class = "panel panel-danger">
-            <div class = "panel-heading" style="font-size:20px;">
-                <strong>CodeShovel :: Python</strong></div>
+            <div class = "panel-heading" style="font-size:22px;">
+                <strong>CodeShovel :: Python  </strong> <small>  CodeShovel Extension</small></div>
 
-            <div  class = "panel-body" style="font-size:15px;">
+            <div  class = "panel-body" style="font-size:17px;">
+                <mark><strong>Note:</strong>This project is based on the existing project
+                <em>"CodeShovel: constructing robust source code history"</em> by Felix Grund.</mark> <br><br>
                 <li> <strong>Team Members: </strong> Braxton Hall, Brian Yeung, Lilli Freischem</li>
-        <br><li> <strong>Scripts and Files: </strong> JSON, git repositories</li>
-        <br><li> <strong>Main Tasks: </strong> Test construction, Research survey and analysis</li></br>
+        <br><li> <strong>Scripts and Files: </strong> Java, JSON, Git repositories</li>
+        <br><li> <strong>Main Tasks: </strong> Test construction, Research survey and analysis, Extension to Python</li></br>
         <li><strong>Description:</strong>
-        This project is based on the existing project
-            <em>"CodeShovel: constructing robust source code history"</em> by Felix Grund. <br>
+
                 CodeShovel is a tool for navigating how source code methods have changed, from moves between line ranges to
-                across classes and files.<br>
+                across classes and files.
                 However, the existing CodeShovel is only restricted to Java programming language, our team was able
             to successfully extend it to Python programming language.
         </li>
@@ -224,8 +242,8 @@
                     <a href= "/pic/codeshovel-paper.pdf">About Our Project and Research</a></li>
             </div>
         </div>
+        </div>
 
-    </section>
     </div>
 </main>
 

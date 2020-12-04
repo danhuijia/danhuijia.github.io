@@ -1,52 +1,23 @@
-main {
-    margin-top : 100px;
-}
 
-.inner{
-    margin-top: 100px;}
-
-
-
-
-.topbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-.topbar a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
 
 .gif-image{
     display: block;
     float: inside;
-    height: 200px;
-    width: 400px;
+    height: auto;
+    width: 45%;
     margin-right: auto;
     margin-left: auto;
-
+    border: 3px solid #555;
 
 }
 
 
 .gif-image:hover{
-    -webkit-transform:scale(2);
-    transform:scale(2);
+    -webkit-transform:scale(2.3);
+    transform:scale(2.3);
+
 }
 
-.project-summary{
-    top: 180px;
-}
 
 .row::after{
     content:"";
@@ -92,21 +63,12 @@ main {
 }
 
 
-.inner-dataVis{
-    background: #f2f2f2;
-}
-
-
-
-.inner-project-summary{
-    background: cornsilk;
-}
 
 /* Set height of body and the document to 100% */
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial;
+    font-family: Comic Sans MS;
 }
 
 .topbar {
@@ -128,27 +90,47 @@ body, html {
     cursor: pointer;
     padding: 8px 10px;
     font-size: 20px;
+    font-family: Comic Sans MS;
     width: 200px;
     height: 75px;
 
 }
 
 .tablink:hover {
-    background-color: #777;
+    background-color: grey;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+
 .tabcontent {
-    /*color: white;*/
     display: none;
-    padding: 80px 20px;
+    padding: 90px 120px;
     height: 100%;
 }
 
-#project {background-color: lavender;}
-#dataVis {background-color: lightcyan;}
-#rldata {background-color: lightblue;}
-#soft-dev {background-color: cornsilk;}
-#pro-lan {background-color: lightpink;}
+#project {background-color: #f2e6ff;}
+#dataVis {background-color: #ecf9f2;}
+#rldata {background-color: #ecf2f9;}
+#soft-dev {background-color: #ffe7b3;}
+#pro-lan {background-color: #ffe6e6;}
 
 
+.panel-wrap{
+    padding-top: 30px;
+}
+
+.field-title{
+    font-family: Arial Black;
+    color: darkslategray;
+    font-size: 30px;
+
+}
+
+.panel-heading{
+    font-size: 22px;
+    font-family: Arial;
+}
+
+.panel-body{
+    font-size:17px;
+    font-family: Arial;
+}
