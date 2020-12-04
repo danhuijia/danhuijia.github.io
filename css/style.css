@@ -4,7 +4,7 @@
     display: block;
     float: inside;
     height: auto;
-    width: 45%;
+    width: 55%;
     margin-right: auto;
     margin-left: auto;
     border: 3px solid #555;
@@ -13,8 +13,8 @@
 
 
 .gif-image:hover{
-    -webkit-transform:scale(2.3);
-    transform:scale(2.3);
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
 
 }
 
