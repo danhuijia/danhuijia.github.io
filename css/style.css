@@ -1,6 +1,6 @@
 
 
-.gif-image{
+.gif-image {
     display: block;
     float: inside;
     height: auto;
@@ -12,11 +12,11 @@
 }
 
 
-.gif-image:hover{
-    -webkit-transform:scale(1.5);
-    transform:scale(1.5);
+/*.gif-image:hover{*/
+/*    -webkit-transform:scale(1.5);*/
+/*    transform:scale(1.5);*/
 
-}
+/*}*/
 
 
 .row::after{
@@ -26,27 +26,51 @@
 
 }
 
-.profile-trim {
+.project-content {
+    font-size:19px;
+    text-align: center;
+    overflow:auto;
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    margin: auto;
+    display: inline-block;
+}
+
+.project-header{
+    overflow:auto;
+    padding: 10px 10px;
+
+}
+
+.profile {
+
     float:left;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    width:60%;
+
     border-radius: 50%;
-    margin-top: 2%;
-    margin-left:4%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 
+
+.profile-points {
+    list-style: none;
+    padding: 30px 50px;
+}
+
+/*
 .profile {
     display: inline;
     margin: 0 auto;
-    margin-left: -8%;
+    margin-left: -20%;
     height: 100%;
     width: auto;
-}
+}*/
 
-.profile-lili {
+/**.profile-lili {
     display: inline;
     margin: 0 auto;
     margin-left: -2%;
@@ -60,20 +84,21 @@
     margin-left: -5%;
     height: 100%;
     width: auto;
-}
+}**/
 
 
 
 /* Set height of body and the document to 100% */
 body, html {
-    height: 100%;
+    height: 90%;
     margin: 0;
-    font-family: Comic Sans MS;
-}
+    font-family: 'PT Sans', sans-serif;}
 
 .topbar {
     overflow: hidden;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     margin-left: 0px;
     top: 0px;
@@ -90,7 +115,7 @@ body, html {
     cursor: pointer;
     padding: 8px 10px;
     font-size: 20px;
-    font-family: Comic Sans MS;
+    font-family: 'PT Sans', sans-serif;
     width: 200px;
     height: 75px;
 
@@ -105,9 +130,10 @@ body, html {
     display: none;
     padding: 90px 120px;
     height: 100%;
+    background-color: white;
 }
 
-#project {background-color: #f2e6ff;}
+#project {background-color: lightgrey;}
 #dataVis {background-color: #ecf9f2;}
 #rldata {background-color: #ecf2f9;}
 #soft-dev {background-color: #ffe7b3;}
@@ -119,18 +145,19 @@ body, html {
 }
 
 .field-title{
-    font-family: Arial Black;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
     color: darkslategray;
-    font-size: 30px;
+    font-size: 35px;
 
 }
 
 .panel-heading{
     font-size: 22px;
-    font-family: Arial;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .panel-body{
     font-size:17px;
-    font-family: Arial;
+    font-family: 'PT Sans', sans-serif;
 }

@@ -1,4 +1,9 @@
+
 .index-content {
-    font-family: "Comic Sans MS";
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
+    text-align: center;
+    padding: 80px 10px;
 }
+
