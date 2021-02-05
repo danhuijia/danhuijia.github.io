@@ -53,19 +53,21 @@
 
             <div class = project-content >
 
+
                 <div class = project-header>
                     <img   src="/pic/danhui.jpg" alt= "Avatar" class = profile />
 
-                <h1> Hello! I am Lily  </h1>
-                    <h1><span style="font-weight: bold; color:#e67300">Danhui Jia</span></h1>
-                <h1> Welcome to my website!  </h1><br>
+                    <div class = col-info>
+                    <h1> Hello! I am Lily  </h1>
+                        <h1><span style="font-weight: bold; color:#e67300">Danhui Jia</span></h1>
+                    <h1> Welcome to my website!  </h1><br>
 
-                    <span style="color:coral"><h3> Contact me  </h3></span>
+                        <h2> <span style="color:coral">Contact me  </span></h2>
                     <h4><i class="far fa-envelope" style="font-size:20px; color:#ff8000;"></i><a href="mailto:danhuijia@gmail.com">&nbsp;E-mail</a> danhuijia@gmail.com </h4>
                     <h4><i class="fab fa-github" style="font-size:20px; color:#ff8000;" ></i><a href= "https://github.com/danhuijia">&nbsp;Github</a> github.com/danhuijia </h4>
                     <h4><i class="fab fa-linkedin" style="font-size:20px; color:#ff8000;" ></i><a href= "https://www.linkedin.com/in/danhuijia/"> LinkedIn</a> linkedin.com/in/danhuijia/ </h4>
                     <h4><i class="fas fa-mobile" style="font-size:20px; color:#ff8000;" ></i><a href= "tel:778-681-3306">&nbsp;Phone </a> 778-681-3306</h4>
-
+                    </div>
                 </div>
 
 
@@ -134,7 +136,7 @@
                 on how the virus had spread across.</li>
                 <br>
                 <br>
-                <img src="gif/InfoVisFinal.gif" class = "gif-image"/>
+                <img src="gif/InfoVisFinal.gif" class = "gif-image" onclick="onClick()" ondblclick="ondbClick()" />
                 </div>
             </div>
             </div>
@@ -149,7 +151,7 @@
                     different perspectives of the data.</li>
                     <br><li><b>Bar Chart: </b>Transiting a simple bar chart into different type of charts helps
                      analysis from multiple viewpoints.</li>
-            <br><br><img src="gif/InfoVisP2.gif" class = "gif-image"/>
+            <br><br><img src="gif/InfoVisP2.gif" class = "gif-image" onclick="onClick()" ondblclick="ondbClick()" />
                 </div>
                 </div>
             </div>
@@ -165,7 +167,7 @@
                     Animated map shows how the trend progresses from time to time.<br></li>
                    <br> <li><strong>Timeline:</strong>
                         The timeline overview represents the dogs' status for one specific mission at a specific time.<br></li>
-                    <br><br><img src="gif/InfoVisP3.gif" class = "gif-image"/><br><br>
+                    <br><br><img src="gif/InfoVisP3.gif" class = "gif-image" onclick="onClick()" ondblclick="ondbClick()" /><br><br>
                 </div>
             </div>
             </div>
@@ -191,9 +193,9 @@
                     <br>
                     <li> <strong>Main Tasks: </strong> SQL performance,  User interface, Data processing, Data modification</li>
                     <br>
-                    <li><strong> Description:</strong> A simple stimulation of transactions that are performed within a car rental
-                        company by both clients and clerks. It consists of a small data set in table format that
-                        requires the use of SQL to process any data modification and selection. User friendly interface allows
+                    <li><strong> Description:</strong> A simple stimulation of transactions that is used within a car rental
+                        company by both clients and clerks. It consists of a small number of dataset in table format that
+                        requires the use of SQL to process any data modification, selection and search. User friendly interface allows
                         for easy editing and generating information by pressing bottoms and typing in text messages.</li>
                     <br>
                 </div>
@@ -250,7 +252,7 @@
                 <br>A user can set multiple tags for a task, as well as time, date, priority, task status and description.</li>
         <br><br>
                 <div class="pos">
-                    <img src="gif/TaskTrackerGif.gif" class = "gif-image"/></div>
+                    <img src="gif/TaskTrackerGif.gif" class = "gif-image" onclick="onClick()" ondblclick="ondbClick()" /></div>
                 <br>
             </div>
         </div>
@@ -283,13 +285,20 @@
                 However, the existing CodeShovel is only restricted to Java programming language, our team was able
             to successfully extend it to Python programming language.
         </li>
-        <br>
+        <br><br><br>
+                <h3><i class="fas fa-file-pdf" style="color:firebrick"></i>  Our Full Project and Research </h3>
+                <iframe style="align-content: center" src="/pic/codeshovel-paper.pdf" width="100%" height="600px"></iframe>
+                <br><br><br>
+
                 <li><i class="glyphicon glyphicon-share" style="font-size:20px; color:firebrick;" ></i>
                     <a href= "https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0379647">About CodeShovel</a></li>
                 <li><i class="glyphicon glyphicon-share" style="font-size:20px; color:firebrick;" ></i>
                     <a href= "https://libraries.io/github/ataraxie/codeshovel">About Felix Grund and CodeShovel Repo </a></li>
-                <li><i class="glyphicon glyphicon-share" style="font-size:20px; color:firebrick;" ></i>
-                    <a href= "/pic/codeshovel-paper.pdf">About Our Project and Research</a></li>
+
+                <br><br><br>
+
+
+
             </div>
         </div>
         </div>
@@ -316,6 +325,22 @@
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+
+
+    function onClick() {
+        console.log(this.event.target);
+        const img = this.event.target;
+        img.style.transform = "scale(1.75)";
+        img.style.transition = "transform 0.25s ease";
+    }
+
+    function ondbClick(){
+        const img = this.event.target;
+        img.style.float='inside';
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+    }
 </script>
 
 
