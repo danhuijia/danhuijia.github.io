@@ -94,7 +94,7 @@
 
 /* Set height of body and the document to 100% */
 body, html {
-    height: 90%;
+    height: 100%;
     margin: 0;
     font-family: 'PT Sans', sans-serif;}
 
@@ -120,7 +120,7 @@ body, html {
     padding: 8px 10px;
     font-size: 20px;
     font-family: 'PT Sans', sans-serif;
-    width: 200px;
+    width: 20%;
     height: 75px;
 
 }
@@ -132,7 +132,7 @@ body, html {
 
 .tabcontent {
     display: none;
-    padding: 90px 120px;
+    padding: 90px 50px;
     height: 100%;
     background-color: white;
 }
