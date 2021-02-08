@@ -164,4 +164,29 @@ body, html {
 .panel-body{
     font-size:17px;
     font-family: 'PT Sans', sans-serif;
+
+}
+
+.bullet-title-vis {
+    color:darkslategrey;
+    font-weight:bolder;
+    font-size: large;
+}
+
+.bullet-title-dev {
+    color:#663300;
+    font-weight:bolder;
+    font-size: large;
+}
+
+.bullet-title-rel {
+    color:#004466;
+    font-weight:bolder;
+    font-size: large;
+}
+
+.bullet-title-lan {
+    color:#660000;
+    font-weight:bolder;
+    font-size: large;
 }
