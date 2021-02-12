@@ -38,12 +38,19 @@ var mybutton = document.getElementById("topBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFn()};
 
+// Get the navbar
+var topbar = document.getElementById("topbar");
+
+
 function scrollFn() {
-    if ( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if ( document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
         mybutton.style.display = "block";
+        topbar.style.top = "-80px";
     } else {
         mybutton.style.display = "none";
+        topbar.style.top = "0";
     }
+
 }
 
 // When the user clicks on the button, scroll to the top of the document

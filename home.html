@@ -13,7 +13,7 @@
 <body>
 
 
-            <div class = "topbar">
+            <div class = "topbar" id="topbar">
                     <button class="tablink" onclick="openPage('project', this, '#333333')" id="defaultOpen" >About Me
                         <i class="far fa-laugh"style=" font-size: 25px; color:lemonchiffon;" ></i></button>
                     <button class="tablink" onclick="openPage('dataVis', this, 'green')" >Data Visualization</button>
@@ -21,7 +21,7 @@
                     <button class="tablink" onclick="openPage('rldata', this, '#00ace6')">Relational Database</button>
                     <button class="tablink" onclick="openPage('pro-lan', this, '#e60073')">Programming Language</button>
             </div>
-            <button onclick="goTop()" id="topBtn" title="Go to top">
+            <button onclick="goTop()" id="topBtn">
                 <i class="fas fa-angle-double-up" style="color:white;"> </i>
             </button>
 
@@ -90,8 +90,21 @@
                         <i class="fas fa-paw" style="color:deepskyblue"></i></p>
                     </div>
 
+                <div class = profile-points  >
+                    <hr>
+                    <h2>My Interests <i class="fab fa-envira" style="color:green"></i></h2>
+                    <p><i class="fas fa-desktop" style="color:darkseagreen;"> </i>
+                        Software Development | Web Design | Cybersecurity | Cloud Computing
+                    </p>
 
-                    <div class = profile-points>
+                    <p><i class="fas fa-cookie" style="color:darkseagreen;"> </i>
+                        Badminton | Workout | Boardgame | Animal | Language
+                    </p>
+
+                </div>
+
+
+                    <div class = profile-points style="padding-bottom: 80px">
                         <hr>
                         <h2> My Experience <i class="fas fa-coins" style="color:green"></i></h2>
 
@@ -103,25 +116,32 @@
                             </div>
 
                             <div class = "profile-exp-info">
-                                <h3>Executive | UBC Badminton Club </h3>
-                                <p> description: </p>
+                                <span class = exp-title ><h3>Executive | UBC Badminton Club </h3></span><br>
+                                <li> Organized activities and managed over 170 members
+                                    through active planning and task distribution </li><br>
+                                <li>Hosted open tournaments with professional sports league and company of more than 300 entries, and helped attain
+                                    net revenue over $12,500 per year</li><br>
+                                <span style="color:steelblue"><p><i class="fab fa-facebook"></i> UBC Badminton Club</p></span>
 
                             </div>
                         </div>
 
                         <br><br>
 
-                        <div class = profile-exp>
+                        <div class = profile-exp >
 
                             <div class = exp-logo style="float:right;">
                                 <img src="/pic/starbucks_logo.jpg" alt= "Avatar" width = "100%" height="100%"  style=" border-radius: 5%;"/>
+
                                 <div > Jan 2017-Nov 2017 </div>
                             </div>
 
                             <div class = "profile-exp-info" style="float:left;">
-                                <h3>Barista | Starbucks</h3>
-                                <p> description: </p>
-                                <cite><a href="https://www.borndigital.com/2020/04/30/starbucks-is-leveraging-digital-to-reopen-90-of-its-stores">Image Source</a></cite>
+                                <span class = exp-title><h3>Barista | Starbucks</h3></span><br>
+                                <li> Maintained positive relationships and efficient work routine in a fast-paced environment </li>
+                                <br>
+                                <li> Fulfilled assigned roles independently and prepared new crews for boarding </li><br>
+                                <!-- <cite><a href="https://www.borndigital.com/2020/04/30/starbucks-is-leveraging-digital-to-reopen-90-of-its-stores">Image Source</a></cite>-->
 
                             </div>
                         </div>
@@ -132,13 +152,14 @@
 
                             <div class = exp-logo >
                                 <img src="/pic/gateway_logo.jpg" alt= "Avatar" width = "100%" height="100%"  style=" border-radius: 5%;"/>
-                                <div > Jun 2014 - Aug 2014 </div>
+                                <div > Jul 2014 - Aug 2014 </div>
                             </div>
 
                             <div class = "profile-exp-info" >
-                                <h3>English Tutor | Gateway Language Village</h3>
-                                <p> description: </p>
-                                <cite><a href="https://www.norwii.com/news/208-cn.html">Image Source</a></cite>
+                                <span class = exp-title><h3>English Tutor | Gateway Language Village</h3></span><br>
+                                <li> Worked with other tutors to create a dynamic range of lesson contents </li><br>
+                                <li> Supported a positive learning environment through supervising student activities</li>
+                               <!-- <cite><a href="https://www.norwii.com/news/208-cn.html">Image Source</a></cite>-->
 
                             </div>
                         </div>
@@ -146,18 +167,7 @@
 
 
 
-                    <div class = profile-points style="padding-bottom:80px">
-                    <hr>
-                    <h2>My Interests <i class="fab fa-envira" style="color:green"></i></h2>
-                    <p><i class="fas fa-desktop" style="color:darkseagreen;"> </i>
-                        Software Development | Web Design | Cybersecurity | Cloud Computing
-                    </p>
 
-                    <p><i class="fas fa-cookie" style="color:darkseagreen;"> </i>
-                        Badminton | Workout | Boardgame | Animal | Language
-                    </p>
-
-                    </div>
 
 
             </div>
