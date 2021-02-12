@@ -12,6 +12,7 @@
 </head>
 <body>
 
+
             <div class = "topbar">
                     <button class="tablink" onclick="openPage('project', this, '#333333')" id="defaultOpen" >About Me
                         <i class="far fa-laugh"style=" font-size: 25px; color:lemonchiffon;" ></i></button>
@@ -20,6 +21,9 @@
                     <button class="tablink" onclick="openPage('rldata', this, '#00ace6')">Relational Database</button>
                     <button class="tablink" onclick="openPage('pro-lan', this, '#e60073')">Programming Language</button>
             </div>
+            <button onclick="goTop()" id="topBtn" title="Go to top">
+                <i class="fas fa-angle-double-up" style="color:white;"> </i>
+            </button>
 
 
 
@@ -27,12 +31,14 @@
 
 <main>
 
+
     <div id = "project" class = "tabcontent" >
+        <h2>   </h2>
+
+
         <section id = projects>
 
             <div class = project-content >
-
-
                 <div class = project-header>
                     <img   src="/pic/danhui.jpg" alt= "Avatar" class = profile />
 
@@ -40,6 +46,7 @@
                     <h1> Hello! I am Lily  </h1>
                         <h1><span style="font-weight: bold; color:#e67300">Danhui Jia</span></h1>
                     <h1> Welcome to my website!  </h1><br>
+
 
                         <h2> <span style="color:coral">Contact me  </span></h2>
                     <h4><i class="far fa-envelope" style="font-size:20px; color:#ff8000;"></i><a href="mailto:danhuijia@gmail.com">&nbsp;E-mail</a> danhuijia@gmail.com </h4>
@@ -50,10 +57,14 @@
                 </div>
 
 
-                <div class = "profile-points">
-                    <br>
+
+                    <div class = profile-points >
+                    <hr>
                     <h2>About Me <i class="fas fa-seedling" style="color:green"></i></h2>
                     <span style="color:darkseagreen; font-style: italic;"><h4>Challenge  Fail  Learn  Grow  Repeat</h4></span>
+                    <span style=" color:#264d00;font-weight:bold">
+                        <p>University of British Columbia: Sauder School of Business 2020 Graduate</p>
+                    <p>Combined Major in Business & Computer Science</p></span>
                     <p> I am a mentally and physically active individual who enjoys coding <i class="far fa-keyboard"></i>
                         and sports <i class="fas fa-running"></i></p>
                     <p> I am open-minded and curious to learn
@@ -61,22 +72,13 @@
                     <p> In the deep field of Computer Science, I am willing and ready to contribute, absorb,
                         and share, either as a developer, a designer, or a tester
                         <i class="fas fa-fist-raised"></i> </p>
-
-                    <br>
-                    <h2>My Interests <i class="fab fa-envira" style="color:green"></i></h2>
-                    <p><i class="fas fa-desktop" style="color:darkseagreen;"> </i>
-                        Software Development | Web Design | Cybersecurity | Cloud Computing
-                    </p>
-
-                    <p><i class="fas fa-cookie" style="color:darkseagreen;"> </i>
-                        Badminton | Workout | Boardgame | Animal | Language
-                    </p>
+                    </div>
 
 
-
-                    <br>
-                    <h2>My Projects <i class="fas fa-project-diagram" style="color:green"></i></h2>
-                    <p><i class="fas fa-angle-double-up" style="color:darkseagreen;"> </i>
+                    <div class = profile-points>
+                    <hr>
+                    <h2>My Projects <i class="fas fa-cogs" style="color:green"></i></h2>
+                    <p><i class="fas fa-hand-point-up" style="color:darkseagreen;"> </i>
                          Check the tab links on the top
                     </p>
 
@@ -86,8 +88,78 @@
                     <p> <span style = "font-size:17px;font-weight: bold;color:darkslategrey;">IN QUEUE:</span>
                         Pet Dairy Log web API with Simple Backend and Data Rendering
                         <i class="fas fa-paw" style="color:deepskyblue"></i></p>
-                    <br><br><br>
-                </div>
+                    </div>
+
+
+                    <div class = profile-points>
+                        <hr>
+                        <h2> My Experience <i class="fas fa-coins" style="color:green"></i></h2>
+
+                        <div class = profile-exp >
+
+                            <div class = exp-logo>
+                            <img src="/pic/ubc_club_logo.jpg" alt= "Avatar" width = "100%" height="100%"  style=" border-radius: 5%;"/>
+                                <div > Jan 2017 - Apr 2020 </div>
+                            </div>
+
+                            <div class = "profile-exp-info">
+                                <h3>Executive | UBC Badminton Club </h3>
+                                <p> description: </p>
+
+                            </div>
+                        </div>
+
+                        <br><br>
+
+                        <div class = profile-exp>
+
+                            <div class = exp-logo style="float:right;">
+                                <img src="/pic/starbucks_logo.jpg" alt= "Avatar" width = "100%" height="100%"  style=" border-radius: 5%;"/>
+                                <div > Jan 2017-Nov 2017 </div>
+                            </div>
+
+                            <div class = "profile-exp-info" style="float:left;">
+                                <h3>Barista | Starbucks</h3>
+                                <p> description: </p>
+                                <cite><a href="https://www.borndigital.com/2020/04/30/starbucks-is-leveraging-digital-to-reopen-90-of-its-stores">Image Source</a></cite>
+
+                            </div>
+                        </div>
+
+                        <br><br>
+
+                        <div class = profile-exp>
+
+                            <div class = exp-logo >
+                                <img src="/pic/gateway_logo.jpg" alt= "Avatar" width = "100%" height="100%"  style=" border-radius: 5%;"/>
+                                <div > Jun 2014 - Aug 2014 </div>
+                            </div>
+
+                            <div class = "profile-exp-info" >
+                                <h3>English Tutor | Gateway Language Village</h3>
+                                <p> description: </p>
+                                <cite><a href="https://www.norwii.com/news/208-cn.html">Image Source</a></cite>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class = profile-points style="padding-bottom:80px">
+                    <hr>
+                    <h2>My Interests <i class="fab fa-envira" style="color:green"></i></h2>
+                    <p><i class="fas fa-desktop" style="color:darkseagreen;"> </i>
+                        Software Development | Web Design | Cybersecurity | Cloud Computing
+                    </p>
+
+                    <p><i class="fas fa-cookie" style="color:darkseagreen;"> </i>
+                        Badminton | Workout | Boardgame | Animal | Language
+                    </p>
+
+                    </div>
+
+
             </div>
         </section>
     </div>
@@ -281,44 +353,12 @@
         </div>
 
     </div>
+
 </main>
 
 
 
-<script>
-    function openPage(pageName,elmnt,color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-
-
-
-    function onClick() {
-        console.log(this.event.target);
-        const img = this.event.target;
-        img.style.transform = "scale(1.75)";
-        img.style.transition = "transform 0.25s ease";
-    }
-
-    function ondbClick(){
-        const img = this.event.target;
-        img.style.float='inside';
-        img.style.transform = "scale(1)";
-        img.style.transition = "transform 0.25s ease";
-    }
-</script>
+<script src="Ops.js"></script>
 
 
 </body>
